@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos no Site</title>
+</head>
+<body>
+    <h1>Colocando vídeos Hospedados Localmente</h1>
+    <p>Este vídeo está hospedado em meu próprio servidor</p>
+    <h2>Colocando um vídeo</h2>
+    <video src="midias/o ceu continua aberto.mp4.mp4" width="560" muted autoplay loop></video>
+                        <!--AUTOPLAY FUNCIONANDO:
+    o auto play mudou no Chrome ele ainda funciona desde que o vídeo esteja sem som, e só adicionar a tag muted antes do auto play-->
+
+    <!--TEM QUE COLOCAR A TAG "controls" PARA APARECER O PLAY, VOL E ETC-->
+    <h2>Colocando todos os formatos para abrir em todos os navegadores  e a capa no vídeo</h2>
+    <video width="560" poster="imagens/capa.png" controls > 
+        <!-- RETIRA O src="" pois vai colocar em baixo / A TAG poster é para capa do vídeo e controls é para aparcer o player-->
+        <source src="midias/o ceu continua aberto.mp4.mp4" type="video/mp4">
+        <source src="midias/o-ceu-continua-aberto.ogv" type="video/ogv">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos</p>
+        <!--essa tag P é para caso o navegador não possa executar o vídeo-->
+
+    </video>
+
+    <h2>Colocando Vídeos externos</h2>
+    <p>Aqui vamos colocar vídeos externos tipo do youtube</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/isMrX5js9og" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h2>Teste de autoplay e loop</h2>
+   <video src="midias/video 30s.mp4" width="560" muted autoplay loop></video>
+
+    
+</body>
+</html>

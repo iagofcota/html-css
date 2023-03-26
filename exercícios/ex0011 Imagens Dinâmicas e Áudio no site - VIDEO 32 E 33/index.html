@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias HTML5</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplismente aumente e diminua o seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/m.png" type="image/png">
+        <!--ele sugere o min mas mudamos para MAX e coloca o tamanho máximo
+        o parametro SRCSET é para colocar a imagem menor na fila.-->
+        <img src="imagens/g.png" alt="Imagem Flexível">
+        <!--começa de BAIXO PRA CIMA, primeiro a img GRANDE, E APÓS os parâmetros source:media:type
+        VÍDEO 32-->
+    </picture>
+    <h1>Vamos reproduzir áudios</h1>
+    <p>Aqui estamos aprendendo a reproduzir áudios no HTML5</p>
+    <audio src="audios/Isadora Pompeo e Marcela Tais - Hey, Pai.mp3" controls></audio>
+</body>
+</html>

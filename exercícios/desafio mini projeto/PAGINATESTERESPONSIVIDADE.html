@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página para mostrar responsividade</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+
+        main{
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            
+            /*width = LARGURA*/
+            min-width: 260px; /*lARGURA MÍNINA QUE ELE VAI OCUPAR*/
+            max-width: 800px; /*lARGURA MÁXIMA QUE ELE VAI OCUPAR*/
+            /*Esses valores cima são valores MÍNIMOS e MÁXIMOS que o conteúdo vai ocupar na tela, fazendo com que ele se ADPTE*/
+            
+            margin: auto; /*O AUTO COLOCA O CONTEÚDO AO CENTRO*/
+        }
+
+        img{
+            /*colocando esse atributo a imagem irá se adaptar na tela*/
+            width: 100%;
+        }
+    </style>
+
+    <!--AULA QUE MOSTRA TUDO, MODULO 2 > AULA 37-->
+
+</head>
+<body>
+    <main>
+        <h1>Teste de responsividade</h1>
+        <h2>AULA QUE MOSTRA TUDO, MODULO 2 > AULA 37</h2>
+        <p>NESSA PÁGINA ELE ENSINA COMO DEIXAR O SITE RESPONSIVO, AULA 37, A PARTIR DOS 10MIN</p>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe error eaque suscipit rem quasi. Inventore quis ad ratione laborum tempora repellat distinctio ex exercitationem, vitae debitis possimus facere nemo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, maiores recusandae quod quas ratione earum perspiciatis quos quia obcaecati ipsa doloribus, libero, numquam consectetur vitae dicta eum exercitationem aliquid aspernatur. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus mollitia laborum totam. Eligendi atque minima quaerat aspernatur dolorum sit quos illum natus ipsum ipsam alias, quam aliquam obcaecati. Voluptatem, delectus.</P>
+
+        <!--para o site ficar melhor apresentavel, podemos usar uma imagem MENOR, ai quando se apaptar irá colocar a outra imagem.
+        para isso usamos a tag PICTURE E SOURCEMEDIA colocando MAX-widht, para dizer que quando chegar no limite de "x"pixel, muda para imagem menor-->
+        <picture>
+            <source media="(max-width: 600px )" srcset="imagens/irina-blok-pq.jpg"> <!--o caminnho da imagem tem que ser digitado-->
+            <img src="imagens/irina-blok.jpg" alt="irina"></picture>
+        
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, ipsum doloremque! Ab animi quam facere consequuntur, enim accusamus magni perspiciatis ullam sapiente saepe aspernatur autem itaque quod fugit vitae rerum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod dolor voluptatibus libero itaque officiis a at sit? Tenetur officia sint qui numquam iste vitae, eius optio, eligendi delectus minima in.</p>
+    </main>
+</body>
+</html>

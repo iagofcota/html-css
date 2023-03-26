@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* em HTML COLOCA id, no CSS para puxar a id coloca #
+   em HTML a class no CSS para puxar é . (ponto)*/ 
+
+body{
+    background-color: aqua;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#principal {
+    text-align: center;
+    color: brown;
+    background-color: aliceblue;
+}
+h1{
+    color: rgb(16, 122, 12) ;
+}
+
+h2{
+    color: orange;
+}
+
+.basico{
+    background-color: green;
+    color: white;
+}
+
+.intermediario{
+    background-color: green;
+    color: yellow;
+}
+
+.avancado{
+    background-color: green;
+    color: red;
+}
